@@ -5,8 +5,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "ec2_instance" {
-    ami = "${var.ami_id}"
-    subnet_id = "${var.subnet_id}"
-    instance_type = "${var.instance_type}"
-    key_name = "${var.ami_key_pair_name}"
+    ami = "ami-053b0d53c279acc90"
+    subnet_id = "subnet-04d543d667a79977f"
+    instance_type = "t2.micro"
+    key_name = "sass"
 } 
